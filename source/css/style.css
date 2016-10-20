@@ -604,11 +604,10 @@ figure.highlight,
 .codeblock {
 	background: #f7f8f8;
 	margin: 10px 0;
-	padding: 10px 0px;
 	line-height: 1.1em;
 	color: #333;
 	overflow: hidden;
-	border-radius: 3px;
+	border-radius: 4px;
 }
 
 figure.highlight table,
@@ -666,25 +665,24 @@ figure.highlight figcaption a,
 
 figure.highlight .gutter,
   .codeblock .gutter {
-	background: #f7f8f8;
-	border-right: 1px solid #e6e6e6;
-	padding: 0.3em 15px;
+  background: rgb(236, 238, 237);
+	padding: 0.8em 15px;
 }
 
 figure.highlight .gutter .line,
     .codeblock .gutter .line {
-	color: #aaaaaa;
+	color: rgba(102, 128, 153, 0.4);
 }
 
 figure.highlight .code,
   .codeblock .code {
-	padding: 0.3em 15px 0.3em 1em;
+	padding: 0.8em 15px 0.8em 1em;
 	width: 100%;
 }
 
 figure.highlight .code pre,
     .codeblock .code pre {
-	max-width: 700px;
+  max-width: 780px;
 	overflow-x: auto;
 	overflow-y: hidden;
 }
