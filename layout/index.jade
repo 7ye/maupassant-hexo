@@ -1,0 +1,33 @@
+extends base
+- var current_title = page.title || tag.name || category.name || site.title
+
+block title
+  if config.subtitle
+    title= config.title + ' - ' + config.subtitle
+  else
+    title= config.title
+block content
+  for post in page.posts.toArray()
+    .post
+      h2.post-title
+        include _partial/helpers
+        a(href=url_for(post.path))
+          +title(post)
+      .post-meta= post.date.format(config.date_format)
+      if post.description
+        .post-content
+          != post.description
+      else if post.excerpt
+        .post-content
+          != post.excerpt
+      else if post.content
+        - var br = post.content.indexOf('\n')
+        if br < 0
+          .post-content
+            != post.content
+        else
+          .post-content
+            != post.content.substring(0, br)
+
+  include _partial/paginator
+

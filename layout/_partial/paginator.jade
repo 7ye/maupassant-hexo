@@ -1,0 +1,4 @@
+if page.next || page.prev
+  div.paginator.pager.pagination
+    .paginator_container.pagination_container
+      != paginator({prev_text: __('previous'), next_text: __('next')})

@@ -1,0 +1,21 @@
+extends base
+
+block title
+  title= page.title + ' - ' + config.title
+
+block content
+  .post
+    h1.post-title= page.title
+    .post-meta= page.date.format('ll')
+      if theme.busuanzi == true
+        script(src='https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js',type='text/javascript')
+        span(class='meta-space')='  |  '
+        span#busuanzi_container_page_pv
+          span#busuanzi_value_page_pv
+          span= ' ' + __('浏览')
+    
+    .post-content
+      != page.content
+    
+    include _partial/tag
+    include _partial/comments

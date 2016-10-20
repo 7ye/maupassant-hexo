@@ -1,0 +1,15 @@
+mixin a_with_current(href, content, id)
+  - var url = url_for(href)
+  if (href == '.' && (is_home() || is_post())) || is_current(href)
+    span.a_container
+      a.selected.active.current(href=url)=content
+  else
+    span.a_container
+      a(href=url)=content
+
+mixin title(page)
+  if page
+    if page.title
+      = page.title
+    else
+      = _p('no-title')
