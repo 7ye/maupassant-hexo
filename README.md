@@ -3,7 +3,7 @@
 Maupassant是一个简单的Hexo模板，由Cho为Typecho设计的一套响应式模板，在此基础上进行修改
 
 ## 安装  
-----------
+
 安装主题：
 ```
 $ git clone https://github.com/7ye/maupassant-hexo.git
@@ -12,7 +12,6 @@ $ npm install hexo-renderer-jade --save
 改变Hexo配置文件 `_config.yml` 修改配置 `theme` 为 `maupassant-hexo`
 
 ## 主题配置  
-----------
 
 ```
 fancybox: true ## 是否启用Fancybox图片灯箱效果 true/false.
@@ -81,7 +80,7 @@ version: 0.0.0
  - version：主题版本，便于静态文件更新后刷新CDN缓存
 
 ## 主题特性
-----------
+
 ### 文章摘要
 首页默认显示文章摘要而非全文，可以在文章的`front-matter`中填写一项`description:`来设置你想显示的摘要，或者直接在文章内容中插入`<!--more-->`以隐藏后面的内容。
 若两者都未设置，则自动截取文章第一段作为摘要。
