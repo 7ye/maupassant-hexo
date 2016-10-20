@@ -18,4 +18,5 @@ block content
       != page.content
     
     include _partial/tag
-    include _partial/comments
+    if page.comments
+      include _partial/comments
