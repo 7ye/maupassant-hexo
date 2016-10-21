@@ -22,6 +22,7 @@ menu:
     directory: atom.xml
 
 ## 侧边栏小工具设置: search, category, tag, recent_posts, links
+widgets:
   - search
   - category
   - tag
