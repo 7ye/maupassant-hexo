@@ -30,16 +30,12 @@ busuanzi: true ## 使用不蒜子统计文章访问量 true/false
 menu: 
   - page: home
     directory: .
-    icon: fa-home
   - page: archive
     directory: archives/
-    icon: fa-archive
   - page: about
     directory: about/
-    icon: fa-user
   - page: rss
     directory: atom.xml
-    icon: fa-rss
 
 ## 侧边栏小工具设置: search, category, tag, recent_posts, links
   - search
