@@ -321,7 +321,40 @@ a:focus {
 }
 
 .post .post-content table {
+  width: 100%;
 	margin: 2em 0;
+}
+.post .post-content>table {
+	border: 1px solid #ddd;
+	border-collapse: separate;
+	border-left: 0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.post .post-content>table td,th{
+	border-left: 1px solid #ddd;
+}
+
+.post .post-content>table th{
+	font-weight: 700;
+}
+
+.post .post-content>table th, .post .post-content>table td{
+ 	padding: 8px;
+ 	line-height: 20px;
+ 	text-align: left;
+ 	vertical-align: top;
+ 	border-top: 1px solid #ddd;
+}
+
+.post .post-content>table thead:first-child tr:first-child th{
+	border-top: 0;
+}
+
+.post .post-content>table tbody>tr:nth-child(2n+1)>td, .post .post-content>table tbody>tr:nth-child(2n+1)>th {
+    background-color: rgba(102,128,153,.05);
 }
 
 .post .post-content .toc {
