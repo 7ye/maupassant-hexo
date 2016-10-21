@@ -50,11 +50,11 @@ links:
   - title: 标题
     url: http://www.example.com
 
-# 静态文件目录
+## 静态文件目录
 js: js
 css: css
 
-# 主题版本
+## 主题版本
 version: 0.0.0
 
 ```
