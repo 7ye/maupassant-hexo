@@ -1,16 +1,15 @@
 fancybox: true ## 是否启用Fancybox图片灯箱效果 true/false.
-duoshuo: sevennight ## 多说用户名,为空则不使用
-disqus:  ## disqus用户名，为空则不使用
+duoshuo: sevennight ## 多说评论用户名[http://duoshuo.com],为空则不使用
+disqus:  ## disqus用户名[https://disqus.com]，为空则不使用
 google_search: true ## 使用google搜索引擎, true/false.
 baidu_search: ## 使用百度搜索引擎, true/false.
-swiftype: ## Swiftype 站内搜索key
-tinysou: ## 微搜索 key
-google_analytics: ## Google统计ID
-baidu_analytics: ## 百度统计ID
-show_category_count: true ## 如果你想显示侧边栏分类下的文章数量，请设置值为true
-busuanzi: true ## 使用不蒜子统计文章访问量 true/false
+swiftype: ## Swiftype 站内搜索key[https://swiftype.com]
+tinysou: ## 微搜索 key[http://tinysou.com]
+google_analytics: ## Google Analytics[https://www.google.com/analytics] 跟踪ID
+baidu_analytics: c5661531246743ef9eef42e7f80a616b ## 百度统计[http://tongji.baidu.com/web/welcome/login] 跟踪ID
+show_category_count: true ## If you want to show the count of categories in the sidebar widget please set the value to true.
+busuanzi: true ## If you want to use Busuanzi page views please set the value to true.
 
-## 头部菜单
 menu: 
   - page: home
     directory: .
@@ -18,24 +17,28 @@ menu:
     directory: archives/
   - page: about
     directory: about/
+  - page: 留言
+    directory: leavemsg/
   - page: rss
     directory: atom.xml
-
-## 侧边栏小工具设置: search, category, tag, recent_posts, links
+  
+    
+## Six widgets in sidebar provided: search, category, tag, recent_posts and links.widgets: 
+widgets:
   - search
   - category
   - tag
   - recent_posts
   - links
 
-## 侧边栏链接
-links: 
-  - title: 标题
-    url: http://www.example.com
 
-## 静态文件目录
+links: 
+  - title: 千盒资源
+    url: http://www.qianhe100.com
+
+# Static files
 js: js
 css: css
 
-## 主题版本
-version: 0.0.0
+# Theme version
+version: 0.0.1

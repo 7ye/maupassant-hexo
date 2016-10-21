@@ -72,3 +72,17 @@ if page.mathjax
 //-数学公式支持
 if page.mathjax2
   include mathjax2
+  
+//- 因为highlight生成的代码块在小屏幕上会出现显示不全，这里用JS单独做自适应
+script.
+  function auto_code_fit(){
+    if($(".highlight").length != 0){
+      var pc_width = $(".post-content").width();
+      $(".highlight .code").find("pre").width((pc_width-70)+"px");
+    }
+  }
+  window.onresize = function(){
+    auto_code_fit();
+  }
+  auto_code_fit();
+  
