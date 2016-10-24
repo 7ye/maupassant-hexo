@@ -2,6 +2,8 @@
 
 Maupassant是一个简单的Hexo模板，由`Cho`为Typecho设计的一套响应式模板，借鉴了`屠城`移植Maupassant的一些功能，在此基础上进行移植与修改.
 
+[演示地址](http://sevennight.cc)
+
 ## 安装  
 
 安装主题：
