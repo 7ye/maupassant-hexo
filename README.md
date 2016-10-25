@@ -1,6 +1,6 @@
 ﻿#Maupassant Hexo
 
-Maupassant是一个简单的Hexo模板，由`Cho`为Typecho设计的一套响应式模板，借鉴了`屠城`移植Maupassant的一些功能，在此基础上进行移植与修改.
+Maupassant是一个简单的Hexo模板，由`Cho`为Typecho设计的一套响应式模板，看到很多博主各自在这套模板上进行了扩展，所以借鉴很多博主移植Maupassant的一些功能，在此基础上进行移植与修改.
 
 [演示地址](http://sevennight.cc)
 
