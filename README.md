@@ -84,6 +84,9 @@ version: 0.0.0
 首页默认显示文章摘要而非全文，可以在文章的`front-matter`中填写一项`description:`来设置你想显示的摘要，或者直接在文章内容中插入`<!--more-->`以隐藏后面的内容。
 若两者都未设置，则自动截取文章第一段作为摘要。
 
+### description描述
+对于首页的`description`，可在Hexo下的配置文件`_config.yml`下配置`description`参数，对于文章，可在`front-matter`中填写一项`description:`来手动写描述，如果文章没有任何配置，则自动截取文章前150个字符为当前文章的`description`(不包括html标签)
+
 ### 添加页面
 在`source`目录下建立相应名称的文件夹，然后在文件夹中建立`index.md`文件，并在`index.md`的`front-matter`中设置layout为`layout: page`。若需要单栏页面，就将layout设置为 `layout: single-column`。
 
