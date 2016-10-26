@@ -1,12 +1,12 @@
 fancybox: true ## 是否启用Fancybox图片灯箱效果 true/false.
-duoshuo: ## 多说用户名,为空则不使用
-disqus: ## disqus用户名，为空则不使用
+duoshuo: sevennight ## 多说用户名,为空则不使用
+disqus:  ## disqus用户名，为空则不使用
 google_search: true ## 使用google搜索引擎, true/false.
 baidu_search: ## 使用百度搜索引擎, true/false.
 swiftype: ## Swiftype 站内搜索key
 tinysou: ## 微搜索 key
 google_analytics: ## Google统计ID
-baidu_analytics: ## 百度统计ID
+baidu_analytics: c5661531246743ef9eef42e7f80a616b ## 百度统计ID
 show_category_count: true ## 如果你想显示侧边栏分类下的文章数量，请设置值为true
 busuanzi: true ## 使用不蒜子统计文章访问量 true/false
 
@@ -18,6 +18,8 @@ menu:
     directory: archives/
   - page: about
     directory: about/
+  - page: 留言
+    directory: leavemsg/
   - page: rss
     directory: atom.xml
 
@@ -31,8 +33,8 @@ widgets:
 
 ## 侧边栏链接
 links: 
-  - title: 标题
-    url: http://www.example.com
+  - title: 千盒资源
+    url: http://www.qianhe100.com
 
 ## 静态文件目录
 js: js
