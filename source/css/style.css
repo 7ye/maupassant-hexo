@@ -298,13 +298,13 @@ a:focus {
   border-radius: 5px;
 }
 
-.post .post-content p a, .post-content a, .post .post-content .large a {
+.post .post-content p a, .post .post-content a, .post .post-content .large a {
 	padding-bottom: 2px;
 	border-bottom: 1px solid #aaa;
 	word-break: break-all;
 }
 
-.post .post-content p a:hover, .post-content a:hover, .post .post-content .large a:hover {
+.post .post-content p a:hover, .post .post-content a:hover, .post .post-content .large a:hover {
 	border-bottom-color: #444;
 }
 
