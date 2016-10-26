@@ -93,6 +93,13 @@ a:focus {
 	clear: both;
 }
 
+.text-ellipsis{
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 #header {
 	padding: 55px 0 0;
 	text-align: left;
@@ -215,6 +222,13 @@ a:focus {
     border-radius: 10px;
 }
 
+#sidebar .post-list>li{
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .label-title {
 	margin-top: 1.5em;
 	font-size: 20px;
@@ -281,6 +295,7 @@ a:focus {
 	margin: 0 5px;
 	padding: 3px 5px;
 	border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
 .post .post-content p a, .post .post-content .large a {
