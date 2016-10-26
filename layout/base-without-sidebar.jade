@@ -33,6 +33,7 @@ html(lang='#{config.language}')
       meta(content='telephone=no', name='format-detection')
       meta(name='renderer', content='webkit')
       block title
+      meta(name='description', content=page_description)
       link(type='text/css', rel='stylesheet', href=url_for(theme.css)+'/basic.css?v=' + theme.version)
       link(type='text/css', rel='stylesheet', href=url_for(theme.css)+'/pure.css?v=' + theme.version)
       link(type='text/css', rel='stylesheet', href=url_for(theme.css)+'/style.css?v=' + theme.version)
