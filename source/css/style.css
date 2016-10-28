@@ -18,24 +18,21 @@ body {
 }
 
 /*滚动条*/
-::-webkit-scrollbar-track {
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	background-color: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	background-color: rgba(0, 0, 0, 0.5);
-}
-
 ::-webkit-scrollbar {
-	width: 8px;
-	height: 8px;
-	background-color: #F5F5F5;
+    width: 12px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb {
+    height: 30px;
+    background-color: #999;
+    -webkit-border-radius: 7px;
+    outline: 2px solid #fff;
+    outline-offset: -2px;
+    border: 2px solid #fff;
+}
+::-webkit-scrollbar-track-piece {
+    background-color: #f1f1f1;
+    -webkit-border-radius: 3px;
 }
 
 .clearfix:after, .paginator_container:after {
