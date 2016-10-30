@@ -18,8 +18,8 @@ menu:
     directory: archives/
   - page: about
     directory: about/
-  - page: 留言
-    directory: leavemsg/
+  - page: guestbook
+    directory: guestbook/
   - page: rss
     directory: atom.xml
 
