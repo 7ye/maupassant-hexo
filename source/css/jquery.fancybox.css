@@ -17,6 +17,10 @@
 	vertical-align: top;
 }
 
+a.fancybox{
+  border-bottom:0px !important;
+}
+
 .fancybox-wrap {
 	position: absolute;
 	top: 0;
