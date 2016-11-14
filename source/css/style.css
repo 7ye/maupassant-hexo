@@ -24,7 +24,7 @@ body {
 }
 ::-webkit-scrollbar-thumb {
     height: 30px;
-    background-color: #999;
+    background-color: #c2c2c2;
     -webkit-border-radius: 7px;
     outline: 2px solid #fff;
     outline-offset: -2px;
@@ -33,6 +33,9 @@ body {
 ::-webkit-scrollbar-track-piece {
     background-color: #f1f1f1;
     -webkit-border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:active{
+  background-color: #7d7d7d;
 }
 
 .clearfix:after, .paginator_container:after {
