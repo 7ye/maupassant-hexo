@@ -23,8 +23,6 @@ duoshuo: sevennight ## 多说用户名,为空则不使用
 disqus:  ## disqus用户名，为空则不使用
 google_search: true ## 使用google搜索引擎, true/false.
 baidu_search: ## 使用百度搜索引擎, true/false.
-swiftype: ## Swiftype 站内搜索key
-tinysou: ## 微搜索 key
 google_analytics: ## Google统计ID
 baidu_analytics: ## 百度统计ID
 show_category_count: true ## 如果你想显示侧边栏分类下的文章数量，请设置值为true
@@ -68,8 +66,6 @@ version: 0.0.0
  - disqus：[Disqus评论](https://disqus.com/) shortname
  - google_search：默认使用Google搜索引擎
  - baidu_search：若想使用百度搜索，将其设定为`true`
- - swiftype：[Swiftype](https://swiftype.com/) 站内搜索key
- - tinysou：[微搜索](http://tinysou.com/) key
  - google_analytics：[Google Analytics](https://www.google.com/analytics/) 跟踪ID
  - baidu_analytics：[百度统计](http://tongji.baidu.com/) 跟踪ID
  - show_category_count：是否显示侧边栏分类数目
