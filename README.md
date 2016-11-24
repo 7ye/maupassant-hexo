@@ -4,6 +4,8 @@ Maupassant是一个简单的Hexo模板，由`Cho`为Typecho设计的一套响应
 
 [演示地址](http://sevennight.cc)
 
+![Maupassant Hexo主题](theme.png)
+
 ## 安装  
 
 安装主题：
