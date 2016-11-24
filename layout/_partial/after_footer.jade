@@ -17,34 +17,6 @@ if theme.duoshuo
             || document.getElementsByTagName('body')[0]).appendChild(ds);
     })();
 
-//-微搜索第三方站内搜索引擎
-if theme.tinysou
-  script.
-    var option = {
-      engineKey: '#{theme.tinysou}'
-    };
-    (function(w,d,t,u,n,s,e){
-      s = d.createElement(t);
-      s.src = u;
-      s.async = 1;
-      w[n] = function(r){
-        w[n].opts = r;
-      };
-      e = d.getElementsByTagName(t)[0];
-      e.parentNode.insertBefore(s, e);
-    })(window,document,'script','//tinysou-cdn.b0.upaiyun.com/ts.js','_ts');
-    _ts(option);
-
-//-第三方内部搜索工具
-if theme.swiftype
-  script.
-    (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-    })(windohttp://fanyi.baidu.com/###w,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
-
-    _st('install','#{theme.swiftype}','2.0.0');
-
 //-谷歌统计引入
 if theme.google_analytics
   script.
