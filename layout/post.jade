@@ -4,6 +4,29 @@ block title
   title= page.title + ' - ' + config.title
 
 block content
+  if page.toc
+    div(id='pageToc')
+      span(class='dropdown-toggle icon-list')
+      div(id='toc' class='toc-article pull-right')
+        div(class='toc-title') 目录
+        hr
+        != toc(page.content, {list_number: false})
+    script.
+      var toc_clickHandler = function(e){
+        var target = $(e.target);
+        // toc
+        event.stopPropagation();
+      }
+      $("#pageToc .dropdown-toggle").click(function(){
+        if($("#toc").is(":hidden")){
+          $("#toc").show();
+          //$(document).bind("click",toc_clickHandler);
+        }else{
+          $("#toc").hide();
+          //$(document).unbind("click",toc_clickHandler);
+        }
+      });
+    
   .post
     h1.post-title= page.title
     .post-meta= page.date.format('ll')
