@@ -4,19 +4,6 @@ if theme.fancybox == true
   script(type='text/javascript',src='//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.pack.js')
   script(type='text/javascript',src=url_for(theme.js) + '/fancybox.js?v=' + theme.version)
 
-//-多说第三方评论插件文件引入
-if theme.duoshuo
-  script.
-    var duoshuoQuery = {short_name:'#{theme.duoshuo}'};
-    (function() {
-        var ds = document.createElement('script');
-        ds.type = 'text/javascript';ds.async = true;
-        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-        ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0]
-            || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-
 //-谷歌统计引入
 if theme.google_analytics
   script.

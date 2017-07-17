@@ -91,6 +91,11 @@ a, button.submit, #c_submit {
 	transition: all 0.1s ease-in;
 }
 
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 500;
+    line-height: 1.2;
+}
+
 a:hover, a:active {
 	color: #444;
 }
@@ -345,37 +350,49 @@ a:focus {
 }
 
 
-
+/*文章内容*/
 .post .post-content {
 	font-size: 14px;
-	line-height: 1.77;
 	color: #333;
-	padding-top: 32px;
 	overflow: hidden;
 	text-align: justify;
 	text-justify: ideographic;
 }
 
+.post .post-content h4, .post .post-content h5, .post .post-content p, 
+.post .post-content ul, .post .post-content ol, .post .post-content blockquote, .post .post-content table {
+    margin: 1.5em 0;
+}
+
 .post .post-content h2, .post .post-content h3 {
-	margin: 1.4em 0 1.1em;
+	margin: 1.5em 0 0;
+	color: #333;
 	font-weight: normal;
-	color: #999;
+}
+
+.post .post-content h2{
+    font-size: 1.75em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.post .post-content h3 {
+    font-size: 1.5em;
 }
 
 .post .post-content pre code {
 	padding: 0 2em;
 }
 
-.post .post-content p, .post .post-content .large {
-	margin: 0 0 1.234em;
-}
-
 .post .post-content p code, .post .post-content .large code {
 	display: inline;
 	margin: 0 5px;
-	padding: 3px 5px;
-	border: 1px solid #ddd;
-  border-radius: 5px;
+    padding: 2px 4px;
+	color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 5px;
+	font-family: "Source Code Pro",Consolas,Menlo,Monaco,"Courier New",monospace;
+    font-size: 0.93em;
 }
 
 .post .post-content p a, .post .post-content a, .post .post-content .large a {
@@ -539,7 +556,7 @@ a:focus {
 }
 
 .post-archive {
-	font-size: 15px;
+	font-size: 14px;
 	line-height: 2;
 	padding-bottom: 0.8em;
 }
@@ -627,11 +644,17 @@ a:focus {
 
 @media print, screen and (max-width: 35.5em) {
 	.body_container {
-		padding: 0 20px;
+		padding: 0 15px;
 	}
 
 	.content_container {
 		padding-right: 0;
+	}
+	
+	.post .post-content{
+		font-size: 16px;
+		letter-spacing: .5px;
+		line-height: 1.8;
 	}
 }
 
@@ -730,7 +753,7 @@ a.back_to_top:hover span {
 /* syntax highlight*/
 figure.highlight,
 .codeblock {
-	background: #f7f8f8;
+	background: #f5f5f5;
 	margin: 10px 0;
 	line-height: 1.1em;
 	color: #333;

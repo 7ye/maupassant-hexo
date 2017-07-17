@@ -19,7 +19,6 @@ $ npm install hexo-renderer-jade --save
 
 ```
 fancybox: true ## 是否启用Fancybox图片灯箱效果 true/false.
-duoshuo: sevennight ## 多说用户名,为空则不使用
 disqus:  ## disqus用户名，为空则不使用
 google_search: true ## 使用google搜索引擎, true/false.
 baidu_search: ## 使用百度搜索引擎, true/false.
@@ -62,7 +61,6 @@ version: 0.0.0
 ```
 
  - fancybox：是否启用[Fancybox](http://fancyapps.com/fancybox/)图片灯箱效果
- - duoshuo：[多说评论](http://duoshuo.com/) shortname
  - disqus：[Disqus评论](https://disqus.com/) shortname
  - google_search：默认使用Google搜索引擎
  - baidu_search：若想使用百度搜索，将其设定为`true`

@@ -5,12 +5,13 @@ block title
 
 block content
   if page.toc
-    div(id='pageToc')
-      span(class='dropdown-toggle icon-list')
-      div(id='toc' class='toc-article pull-right')
-        div(class='toc-title') 目录
-        hr
-        != toc(page.content, {list_number: false})
+    div(class='doc-warp')
+      div(id='pageToc')
+        span(class='dropdown-toggle icon-list')
+        div(id='toc' class='toc-article pull-right')
+          div(class='toc-title') 目录
+          hr
+          != toc(page.content, {list_number: false})
     script.
       var toc_clickHandler = function(e){
         var target = $(e.target);
@@ -20,26 +21,27 @@ block content
       $("#pageToc .dropdown-toggle").click(function(){
         if($("#toc").is(":hidden")){
           $("#toc").show();
-          //$(document).bind("click",toc_clickHandler);
+          $(document).bind("click",toc_clickHandler);
         }else{
           $("#toc").hide();
-          //$(document).unbind("click",toc_clickHandler);
+          $(document).unbind("click",toc_clickHandler);
         }
       });
     
   .post
     h1.post-title= page.title
-    .post-meta= page.date.format('ll')
+    .post-meta= page.date.format('YYYY-MM-DD')
       if theme.busuanzi == true
         script(src='https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js',type='text/javascript')
         span(class='meta-space')='  |  '
         span#busuanzi_container_page_pv
           span#busuanzi_value_page_pv
           span= ' ' + __('浏览')
-    
+    //文章内容
     .post-content
       != page.content
-    
+    //文章标签
     include _partial/tag
+    //评论
     if page.comments
       include _partial/comments

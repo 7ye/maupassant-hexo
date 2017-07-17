@@ -13,12 +13,24 @@ block content
   .post
     .post-archive
         //-Use lodash to classify posts. See https://lodash.com/docs#groupBy
-        each posts, year in _.groupBy(page.posts.toArray(), function(p){return -p.date.format('YYYY')})
-          h2= -year
-          ul.listing
-            for post in posts
-              li
-                span.date= post.date.format('YYYY/MM/DD')
-                a(href=url_for(post.path), title=post.title)
-                  +title(post)
-  include _partial/paginator.jade
+        if page.category || page.tag
+          each posts, year in _.groupBy(page.posts.toArray(), function(p){return -p.date.format('YYYY')})
+            h2= -year
+            ul.listing
+              for post in posts
+                li
+                  span.date= post.date.format('YYYY/MM/DD')
+                  a(href=url_for(post.path), title=post.title)
+                    +title(post)
+        else
+          each posts, year in _.groupBy(site.posts.toArray(), function(p){return -p.date.format('YYYY')})
+            h2= -year
+            ul.listing
+              for post in posts
+                li
+                  span.date= post.date.format('YYYY/MM/DD')
+                  a(href=url_for(post.path), title=post.title)
+                    +title(post)
+// 归档默认在全站目录下展示全站所有文章，在分类及标签目录下展示分类和标签的所有文章               
+// 如需要归档分页，需要删除上面if判断（保留if代码块代码），和else判断（删除else代码块代码），以及取消下面include引入分页组件的代码即可
+// include _partial/paginator.jade
