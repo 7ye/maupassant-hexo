@@ -35,7 +35,6 @@ html(lang='#{config.language}')
       block title
       if page_description
         meta(name='description', content=page_description)
-      link(type='text/css', rel='stylesheet', href=url_for(theme.css)+'/basic.css?v=' + theme.version)
       link(type='text/css', rel='stylesheet', href=url_for(theme.css)+'/pure.css?v=' + theme.version)
       link(type='text/css', rel='stylesheet', href=url_for(theme.css)+'/style.css?v=' + theme.version)
       script(type='text/javascript',src='//cdn.bootcss.com/jquery/1.11.0/jquery.min.js')
