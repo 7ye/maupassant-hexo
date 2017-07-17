@@ -1,9 +1,13 @@
-﻿#Maupassant Hexo
+﻿# Maupassant Hexo
 
 Maupassant是一个简单的Hexo模板，由`Cho`为Typecho设计的一套响应式模板，看到很多博主各自在这套模板上进行了扩展，所以借鉴很多博主移植Maupassant的一些功能，在此基础上进行移植与修改.
 
 [演示地址](http://sevennight.cc)
+### 2017-07-17 更新
+ - 多说挂了，删除跟多说相关的所有配置
+ - 修改归档显示方式，全站目录模式下查看全站目录结构（之前带有分页），分类和标签目录模式下，查看分类和标签的所有目录，如需要归档带分页，请到主题文件夹下修改`archive.jade`，里面有修改说明
 
+ 
 ![Maupassant Hexo主题](theme.png)
 
 ## 安装  
@@ -56,7 +60,7 @@ js: js
 css: css
 
 ## 主题版本
-version: 0.0.0
+version: 0.0.1
 
 ```
 
