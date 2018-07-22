@@ -16,7 +16,8 @@ Maupassant是一个简单的Hexo模板，由`Cho`为Typecho设计的一套响应
 安装主题：
 ```
 $ git clone https://github.com/7ye/maupassant-hexo.git
-$ npm install hexo-renderer-jade --save
+$ npm install hexo-renderer-jade --save (必须)
+$ npm install hexo-generator-feed --save (可选: 如需要RSS订阅请安装)
 ```
 改变Hexo配置文件 `_config.yml` 修改配置 `theme` 为 `maupassant-hexo`
 
