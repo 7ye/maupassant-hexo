@@ -138,4 +138,4 @@ mathjax2: true
 而不是`mathjax: true`。 相应地，在需要使用数学公式的文章的`front-matter`中也添加`mathjax2: true`
 
 ### 支持语言
-目前支持简体中文（zh-CN），需其他语言支持在主题目录下`languages`，按照已有配置文件对照着规则添加`yml`配置文件即可
+目前支持简体中文（zh-CN），需其他语言支持在主题目录下`languages`，按照已有配置文件对照着规则添加`yml`配置文件即可 
